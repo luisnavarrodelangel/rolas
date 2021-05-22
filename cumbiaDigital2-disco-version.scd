@@ -15,8 +15,14 @@ Vox.decir (buffer: Prand ([RGGTRN.guau2020], inf), db:0, rel: 35, pan: Pseq ([-0
 Vox.decir (buffer: Prand ([RGGTRN.encanta2020], inf), db:0, rel: 35, pan: Pseq ([-0.8, 0, 0.8], inf));
 Vox.decir (buffer: Prand ([RGGTRN.principio2020], inf), db:, rel: 100, pan: Pseq ([-0.8, 0, 0.8], inf));
 Vox.decir (buffer: Prand ([RGGTRN.perron2020], inf), db:0, rel: 50, pan: Pseq ([-0.8, 0, 0.8], inf));
-Vox.decir (buffer: Prand ([RGGTRN.evolucion2020], inf), db:-10, rel: 50, pan: Pseq ([-0.8, 0, 0.8], inf));
 Vox.decir (buffer: Prand ([RGGTRN.intro], inf), db:0, rel: 100, pan: Pseq ([-0.8, 0, 0.8], inf));
+Vox.decir (buffer: Prand ([RGGTRN.encanta2], inf), db:-10, rel: 100, pan: Pseq ([-0.8, 0, 0.8], inf));
+Vox.decir (buffer: Prand ([RGGTRN.grupodebinis], inf), db:-10, rel: 100, pan: Pseq ([-0.8, 0, 0.8], inf));
+Vox.decir (buffer: Prand ([RGGTRN.kiwilimon], inf), db:-15, rel: 100, pan: Pseq ([-0.8, 0, 0.8], inf));
+Vox.decir (buffer: Prand ([RGGTRN.presentacion], inf), db:-12, rel: 100, pan: Pseq ([-0.8, 0, 0.8], inf));
+Vox.decir (buffer: Prand ([RGGTRN.presentacion2], inf), db:-12, rel: 100, pan: Pseq ([-0.8, 0, 0.8], inf));
+Vox.decir (buffer: Prand ([RGGTRN.presentacion3], inf), db:-15, rel: 100, pan: Pseq ([-0.8, 0, 0.8], inf));
+Vox.decir (buffer: Prand ([RGGTRN.principio2020], inf), db:-15, rel: 100, pan: Pseq ([-0.8, 0, 0.8], inf));
 
 
 /////////uno
@@ -85,11 +91,10 @@ Pbindef (\hi,
 
 (
 Bajo.toca(inst: 'bajo2',
-	db: -20, nota: Pseq([57, 60, 64, 57, 60, 64, 53, 57, 60, 53, 57, 60,
+	db: -28, nota: Pseq([57, 60, 64, 57, 60, 64, 53, 57, 60, 53, 57, 60,
 		55, 59, 62, 55, 59, 62, 53, 57, 60,  55-12, 55, 62-12, 62]+12, inf),
 	rel: Pseq ([Pseq([1, 0.5, 0.5], 7), Pseq(#[0.5, 0.5, 0.5, 0.5], 1) ], inf),
-	dur: Pseq ([Pseq([1, 0.5, 0.5], 7), Pseq(#[0.5, 0.5, 0.5, 0.5], 1) ], inf),
-	pan: 0;
+	dur: Pseq ([Pseq([1, 0.5, 0.5], 7), Pseq(#[0.5, 0.5, 0.5, 0.5], 1) ], inf)
 );
 )
 
@@ -106,12 +111,10 @@ Mel2.detener;
 Pbindef (\hi).stop;
 (
 Bajo.toca(inst: 'bajo2',
-	db: Pseq ([-18], inf),
+	db: Pseq ([-28], inf),
 	nota: Pseq([57, \r, 64,   57, \r,  64], inf),
 	rel: Pseq ([0.75, 0.25,1], inf),
 	dur:Pseq([0.75,0.25,1], inf),
-	pan: 0;
-
 )
 );
 
@@ -174,19 +177,17 @@ Pbindef (\hi,
 
 (
 Bajo.toca(inst: 'bajo2',
-	db: Pseq ([-18], inf),
+	db: Pseq ([-32], inf),
 	nota: Pseq([57, \r, 64,   57, \r,  64, 53, \r, 60, 53, \r, 60, 55, \r, 62, 55, \r, 62,  53, \r, 60, 55-12, \r, 62-12], inf),
 	rel: Pseq ([0.75, 0.25,1], inf),
 	dur:Pseq([0.75,0.25,1], inf),
-	pan: 0;
-
 )
 );
 
-Mel.toca (pan: Prand([0], inf), nota: Pseq ([[57, 57, 57, 57, 57, 57, 57, 57]]+12, inf), db: -18, inst: 'mel4', dur: Prand ([4], inf), rel: Prand ([0.25, 0.5], inf), arpegiar: 1/4);
+Mel.toca (pan: Prand([0], inf), nota: Pseq ([[57, 57, 57, 57, 57, 57, 57, 57]]+12, inf), db: -20, inst: 'mel4', dur: Prand ([4], inf), rel: Prand ([0.25, 0.5], inf), arpegiar: 1/4);
 
 
-Mel2.toca (pan: Prand([1], inf), nota: Pseq ([Pseq ([57, 56], 8), Pseq ([57, 53], 8), Pseq ([55, 54], 8), Pseq ([53], 8), Pseq([55]-12, 8)], inf), db: -17, inst: 'pluck', dur: Prand ([0.25], inf), rel: Prand ([1, 0.5], inf), arpegiar: 1/4);
+Mel2.toca (pan: Prand([1], inf), nota: Pseq ([Pseq ([57, 56], 8), Pseq ([57, 53], 8), Pseq ([55, 54], 8), Pseq ([53], 8), Pseq([55]-12, 8)], inf), db: -20, inst: 'pluck', dur: Prand ([0.25], inf), rel: Prand ([1, 0.5], inf), arpegiar: 1/4);
 
 )
 
@@ -202,9 +203,8 @@ Mel.toca (pan: Prand([0], inf), nota: Pseq([Pseq ([52, 52, 57, 60,  52, 52, 57, 
 		0.25, 0.25, 0.25,  0.25,  0.25,   0.25,   0.25, 0.25,  0.25, 0.25, 0.25, 0.25, 1], 2)], inf), rel: 0.5);
 
 
-
 Bajo.toca(inst: 'bajo2',
-	db: Pseq ([-18], inf),
+	db: Pseq ([-28], inf),
 	nota:Pseq([Pseq([57, \r, 64,   57, \r,  64,  53, \r, 60,   53, \r, 60], 3),  Pseq([57, \r, 64,    57, \r,  64,     53, \r, 60,   53,  \r, 56], 1)], inf),
 	rel: Pseq ([0.75, 0.25,1], inf),
 	dur:Pseq([0.75,0.25,1], inf),
@@ -238,7 +238,7 @@ Mel.toca (pan: Prand([0], inf), nota: Pseq (#[57], inf),
 
 Bajo.detener;
 Bajo.toca(inst: 'bajo2',
-	db: Pseq ([-18], inf),
+	db: Pseq ([-28], inf),
 	nota:Pseq([57, \r, 64,   57, \r,  64,  53, \r, 60,   53, \r, 60], inf),
 	rel: Pseq ([0.75, 0.25,1], inf),
 	dur:Pseq([0.75,0.25,1], inf),

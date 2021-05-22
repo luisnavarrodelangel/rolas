@@ -10,13 +10,13 @@ Ritmo.toca(campanaDb:-150, campanaDur: Prand ([1], inf), guiraDb: -25, timbalesA
 
 Teclado.toca(inst:'mel4', rel:0.25, db: -18, pan: 0.8, nota: Pseq (#[r, [62, 65, 69]], inf), dur: 0.5);
 
-Bajo.toca(inst:'bajo2', db:-15, nota: Pseq([62,65,69], inf), pan: 0, rel: Pseq ([1, 0.5, 0.5], inf), dur: Pseq([1, 0.5, 0.5], inf));
+Bajo.toca(inst:'bajo2', db:-23, nota: Pseq([62,65,69], inf), pan: 0, rel: Pseq ([1, 0.5, 0.5], inf), dur: Pseq([1, 0.5, 0.5], inf));
 
 
 ////dos////////////////
 (
 // Ritmo.toca (bomboDb: -20, guiraDb: -20);
-Bajo.toca(inst:'bajo2', db:-15, nota: Pseq([62,65,69], inf), pan: 0, rel: Pseq ([1, 0.5, 0.5], inf), dur: Pseq([1, 0.5, 0.5], inf));
+Bajo.toca(inst:'bajo2', db:-25, nota: Pseq([62,65,69], inf), pan: 0, rel: Pseq ([1, 0.5, 0.5], inf), dur: Pseq([1, 0.5, 0.5], inf));
 
 Mel.toca (atk: 0.105, rel: Pseq ([Pseq ([0.4,0.4, 0.4], 1), Pseq ([0.4,0.4,4], 1)]);, inst:'pluck2', db: -15,  nota: Pseq ([[62, 62-12], [62, 62-12], [65, 65-12]], inf),  dur: Pseq ([Pseq ([4,4, 4], 1), Pseq ([3.5,0.25,4], 1)]));
 
@@ -33,7 +33,7 @@ Mel2.toca (atk: 0.105, rel: Pseq ([Pseq ([0.4,0.4, 0.4], 1), Pseq ([0.4,0.4,4], 
 ////tres
 (
 // Ritmo.toca (bomboDb: -20, guiraDb: -20);
-Bajo.toca(inst:'bajo2', db:-15, nota: Pseq([62,65,69], inf), pan: 0, rel: Pseq ([1, 0.5, 0.5], inf), dur: Pseq([1, 0.5, 0.5], inf));
+Bajo.toca(inst:'bajo2', db:-25, nota: Pseq([62,65,69], inf), pan: 0, rel: Pseq ([1, 0.5, 0.5], inf), dur: Pseq([1, 0.5, 0.5], inf));
 
 // Pseq (#[r, [62, 65, 69],r, [62, 65, 69],  r, [60, 64, 67], r, [60, 64, 67]], 4), Pseq([\r], inf)], inf));
 Mel.toca (atk: 0.105, rel: 0.4, inst:'pluck2', db: -20,  nota: Pseq ([Pseq([62, 62, 65, 69,69, 69, 69, 69, 69, 69, 69, 72, 69, 72, 69, 72, 69, 69, 69, 67, 65, \r, 62, 65, 69, 69, 69, 69, 69, 69, 69, 69, 72, 69, 72, 69, 72, 69, 69, 69, 67, 65, \r,
@@ -70,7 +70,7 @@ Mel2.detener;
 (
 
 
-Bajo.toca(inst:'bajo2', db:-15, nota: Pseq([62,65,69, 60, 64, 67, 62,65,69, 60, 64, 67], inf), pan: 0, rel: Pseq ([1, 0.5, 0.5], inf), dur: Pseq([1, 0.5, 0.5], inf));
+Bajo.toca(inst:'bajo2', db:-25, nota: Pseq([62,65,69, 60, 64, 67, 62,65,69, 60, 64, 67], inf), pan: 0, rel: Pseq ([1, 0.5, 0.5], inf), dur: Pseq([1, 0.5, 0.5], inf));
 
 
 Mel.toca (atk: 0.105, rel: 0.4, inst:'pluck2', db: -20,  nota: Pseq([

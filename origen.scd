@@ -6,7 +6,7 @@ Vox.decir (buffer: Prand ([RGGTRN.si], inf), db:-14, rel: 35, pan: Pseq ([-0.8, 
 
 ///uno
 
-Ritmo.toca (congaCDb: Pseq ([-45, -45, -23, -45, -23, -45, -45, -45, -23, -45, -45, -23,-45, -45, -45, -23]+12, inf), 	       congaCFreq:Pseq (#[4, 4, 4, 4, 4, 4, 4, 4,  4, 4, 4, 4, 4, 4, 4, 4], inf) , campanaDb: Pseq ([-25, -22, -24, -30, -30, -25, -30, -30, -25, -30, -30]*15,inf), campanaDur: Pseq ([0.5, 0.5, 0.5, 0.25, 0.25, 0.5, 0.25, 0.25, 0.5, 0.25, 0.25], inf), campanaFreq: Pseq ([7, 18, 7, 18, 18,7, 18, 18, 7, 18, 18], inf), congaOfreq: Pseq (#[0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0,  0, 0, 1, 1], inf), congaODb: -200);
+Ritmo.toca (congaCDb: Pseq ([-45, -45, -23, -45, -23, -45, -45, -45, -23, -45, -45, -23,-45, -45, -45, -23]+30, inf), 	       congaCFreq:Pseq (#[4, 4, 4, 4, 4, 4, 4, 4,  4, 4, 4, 4, 4, 4, 4, 4], inf) , campanaDb: Pseq ([-25, -22, -24, -30, -30, -25, -30, -30, -25, -30, -30]*15,inf), campanaDur: Pseq ([0.5, 0.5, 0.5, 0.25, 0.25, 0.5, 0.25, 0.25, 0.5, 0.25, 0.25], inf), campanaFreq: Pseq ([7, 18, 7, 18, 18,7, 18, 18, 7, 18, 18], inf), congaOfreq: Pseq (#[0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0,  0, 0, 1, 1], inf), congaODb: -200);
 
 
 //dos
@@ -14,7 +14,7 @@ Ritmo.toca (congaCDb: Pseq ([-45, -45, -23, -45, -23, -45, -45, -45, -23, -45, -
 )
 
 (
-Mel.toca (db: -28, inst: 'melGliss', nota: Pseq ([66]-12,  1), dur: Pseq([7.5, 0.5]/2, 1), rel: Pseq ([8], 1), atk: 0.010);
+Mel.toca (db: -22, inst: 'melGliss', nota: Pseq ([66]-12,  1), dur: Pseq([7.5, 0.5]/2, 1), rel: Pseq ([8], 1), atk: 0.010);
 Teclado.detener;)
 
 //////tres

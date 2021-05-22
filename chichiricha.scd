@@ -18,14 +18,14 @@ Vox.decir (buffer: Prand ([RGGTRN.internacional], inf), db:-17, rel: 35, pan: Ps
 )
 
 ////////dos///////////
-Bajo.toca(inst: 'bajo2', db: -30, nota: Pseq ([62, 69, 65], inf), dur: Pseq ([1.5, 1.5, 13]/2,inf), rel: Pseq ([1.5, 1.5, 10]/1.5,inf));
+Bajo.toca(inst: 'bajo2', db: -15, nota: Pseq ([62, 69, 65], inf), dur: Pseq ([1.5, 1.5, 13]/2,inf), rel: Pseq ([1.5, 1.5, 10]/1.5,inf));
 
 //////////tres////////////////
 Ritmo.toca(campanaDb:-200, campanaDur: 1, guiraDb: -24, timbalesDur: Pseq ([0.5], inf), timbalesNum: 0, congaCDb: Pseq ([-14, -17, -15, -20 ], inf) ,congaODb: -22);
 
 //////////cuatro////////////////
 
-Bajo.toca(inst: 'bajo2', db: -30, nota:Pseq ([Pseq ([62, 69, 65], 1),  Pseq ([62, 69, 65, 60], 1)], inf), dur: Pseq ([Pseq ([1.5, 1.5,  13]/2,1), Pseq ([1.5, 1.5,  13]/2,1)], inf), rel:Pseq ([Pseq ([1.5, 1.5, 13]/1.5,1), Pseq ([1.5, 1.5,  13]/1.5,1)], inf));
+Bajo.toca(inst: 'bajo2', db: -15, nota:Pseq ([Pseq ([62, 69, 65], 1),  Pseq ([62, 69, 65, 60], 1)], inf), dur: Pseq ([Pseq ([1.5, 1.5,  13]/2,1), Pseq ([1.5, 1.5,  13]/2,1)], inf), rel:Pseq ([Pseq ([1.5, 1.5, 13]/1.5,1), Pseq ([1.5, 1.5,  13]/1.5,1)], inf));
 
 
 Ritmo.toca(campanaPan: -0.8, campanaDb: -25, campanaDur: 1, guiraDb: -25, timbalesDur: Pseq ([0.25], inf), timbalesNum: 0, congaCDb: Pseq ([-17, -20, -18, -24]*1.25, inf), congaOfreq: Prand (#[0, r, 0.5, r, 1], inf),  congaODb: Pseq ([-23, -25, -28, -30], inf));
